@@ -2,7 +2,7 @@
 Name=BUILD_NAME 
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=EXEC_COMMAND --reuse-window @@ %F @@
+Exec=EXEC_COMMAND --reuse-window %F
 Icon=ICON_PATH
 Type=Application
 StartupNotify=true
@@ -14,5 +14,5 @@ Keywords=vscode;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
-Exec=EXEC_COMMAND --new-window @@ %F @@
+Exec=EXEC_COMMAND --new-window %F
 Icon=ICON_PATH

@@ -2,7 +2,7 @@
 Name=Brave Web Browser
 GenericName=Web Browser
 Keywords=Internet;WWW;Browser;Web;Explorer
-Exec=EXEC_COMMAND %F
+Exec=EXEC_COMMAND %U
 Icon=ICON_PATH
 Terminal=false
 X-MultipleArgs=false
@@ -15,6 +15,6 @@ Actions=new-incognito-window;
 
 [Desktop Action new-incognito-window]
 Name=New Incognito Window
-Exec=EXEC_COMMAND --incognito %F
+Exec=EXEC_COMMAND --incognito %U
 Icon=ICON_PATH
 

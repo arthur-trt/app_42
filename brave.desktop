@@ -10,3 +10,15 @@ Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+Actions=new-empty-window;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=EXEC_COMMAND --new-window %F
+Icon=ICON_PATH
+
+[Desktop Action new-incognito-window]
+Name=New Incognito Window
+Exec=EXEC_COMMAND --new-incognito %F
+Icon=ICON_PATH
+

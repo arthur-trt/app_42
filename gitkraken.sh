@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#
-# You can chose the vscode build you want : stable // insider
-#
-BUILD=stable # Or insider
-
-
 DESKTOP_FILE=${HOME}/.local/share/applications/gitkraken.desktop
 EXEC_COMMAND="${HOME}/opt/gitkraken/gitkraken"
 ICON_PATH="${HOME}/opt/gitkraken/gitkraken.png"

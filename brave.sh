@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#
-# You can chose the vscode build you want : stable // insider
-#
-BUILD=stable # Or insider
-
-
 DESKTOP_FILE=${HOME}/.local/share/applications/brave.desktop
 EXEC_COMMAND="${HOME}/opt/brave/brave-browser"
 ICON_PATH="${HOME}/opt/brave/product_logo_256.png"

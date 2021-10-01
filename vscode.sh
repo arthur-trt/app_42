@@ -20,7 +20,7 @@ tar -zxvf /tmp/code.tar.gz --directory ${HOME}/opt
 mv ${HOME}/opt/VSCode-linux-x64/ ${HOME}/opt/code-linux-64/
 
 if [[ ! -f ${DESKTOP_FILE} ]]; then
-	curl -L "https://raw.githubusercontent.com/arthur-trt/vscode_42/main/com.visualstudio.code.desktop" --output ${DESKTOP_FILE}
+	curl -L "https://raw.githubusercontent.com/arthur-trt/app_42/main/com.visualstudio.code.desktop" --output ${DESKTOP_FILE}
 	if [[ ${BUILD} == "insider" ]]; then
 		BUILD_NAME="Visual Studio Code Insiders"
 		EXEC_COMMAND="${HOME}/opt/code-linux-64/bin/code-insiders"

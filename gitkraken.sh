@@ -11,7 +11,7 @@ rm -rf ${HOME}/opt/gitkraken/
 tar -zxvf /tmp/kraken.tar.gz --directory ${HOME}/opt
 
 if [[ ! -f ${DESKTOP_FILE} ]]; then
-	curl -L "https://raw.githubusercontent.com/arthur-trt/vscode_42/main/gitkraken.desktop" --output ${DESKTOP_FILE}
+	curl -L "https://raw.githubusercontent.com/arthur-trt/app_42/main/gitkraken.desktop" --output ${DESKTOP_FILE}
 	sed -i "s|ICON_PATH|${ICON_PATH}|g" ${DESKTOP_FILE}
 	sed -i "s|EXEC_COMMAND|${EXEC_COMMAND}|g" ${DESKTOP_FILE}
 

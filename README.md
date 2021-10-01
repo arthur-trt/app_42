@@ -6,7 +6,7 @@ You can reuse each of the scripts to update applications without losing data
 
 ## VSCode
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/vscode_42/main/vscode.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/app_42/main/vscode.sh)"
 ```
 
 For uninstall you can :
@@ -17,7 +17,7 @@ rm -rf ${HOME}/opt/code-linux-64
 
 ## GitKraken
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/vscode_42/main/gitkraken.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/app_42/main/gitkraken.sh)"
 ```
 
 For uninstall you can :
@@ -28,7 +28,7 @@ rm -rf ${HOME}/opt/gitkraken
 
 ## Brave Browser
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/vscode_42/main/brave.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/arthur-trt/app_42/main/brave.sh)"
 ```
 
 For uninstall you can :

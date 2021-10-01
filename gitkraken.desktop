@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GitKraken
+Comment=Unleash your repo
+GenericName=Git Client
+Exec=EXEC_COMMAND %F
+Icon=ICON_PATH
+Type=Application
+StartupNotify=true
+StartupWMClass=gitkraken
+Categories=TGNOME;GTK;Development;RevisionControl;
+MimeType=text/plain;
+Keywords=gitkraken;

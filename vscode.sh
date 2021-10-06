@@ -8,22 +8,24 @@ BUILD=stable # Or insider
 
 DESKTOP_FILE=${HOME}/.local/share/applications/com.visualstudio.code.desktop
 BUILD_NAME="Visual Studio Code"
-EXEC_COMMAND="${HOME}/opt/code-linux-64/bin/code"
-ICON_PATH="${HOME}/opt/code-linux-64/resources/app/resources/linux/code.png"
+EXEC_COMMAND="${HOME}/sgoinfre/opt/code-linux-64/bin/code"
+ICON_PATH="${HOME}/sgoinfre/opt/code-linux-64/resources/app/resources/linux/code.png"
 WM_BUILD="Code"
 COMMAND="code"
 
 curl -L "https://code.visualstudio.com/sha/download?build=${BUILD}&os=linux-x64" --output /tmp/code.tar.gz
-mkdir -p ${HOME}/opt
-rm -rf ${HOME}/opt/code-linux-64/
-tar -zxvf /tmp/code.tar.gz --directory ${HOME}/opt
-mv ${HOME}/opt/VSCode-linux-x64/ ${HOME}/opt/code-linux-64/
+mkdir -p ${HOME}/sgoinfre/opt
+rm -rf ${HOME}/sgoinfre/opt/code-linux-64/
+tar -zxvf /tmp/code.tar.gz --directory ${HOME}/sgoinfre/opt
+mv ${HOME}/sgoinfre/opt/VSCode-linux-x64/ ${HOME}/sgoinfre/opt/code-linux-64/
+
+rm -f ${DESKTOP_FILE}
 
 if [[ ! -f ${DESKTOP_FILE} ]]; then
 	curl -L "https://raw.githubusercontent.com/arthur-trt/app_42/main/com.visualstudio.code.desktop" --output ${DESKTOP_FILE}
 	if [[ ${BUILD} == "insider" ]]; then
 		BUILD_NAME="Visual Studio Code Insiders"
-		EXEC_COMMAND="${HOME}/opt/code-linux-64/bin/code-insiders"
+		EXEC_COMMAND="${HOME}/sgoinfre/opt/code-linux-64/bin/code-insiders"
 		WM_BUILD="Code - Insiders"
 		COMMAND="code-insiders"
 	fi
@@ -38,5 +40,5 @@ fi
 
 if ! command -v ${COMMAND} &> /dev/null
 then
-	echo "export PATH=\$HOME/opt/code-linux-64/bin:\$PATH" >> ${HOME}/.zshrc
+	echo "export PATH=\$HOME/sgoinfre/opt/code-linux-64/bin:\$PATH" >> ${HOME}/.zshrc
 fi

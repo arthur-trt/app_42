@@ -1,11 +1,12 @@
 #!/bin/bash
 
+BRAVE_LINK="https://github.com/brave/brave-browser/releases/download/v1.31.87/brave-browser-1.31.87-linux-amd64.zip"
 DESKTOP_FILE=${HOME}/.local/share/applications/brave.desktop
 EXEC_COMMAND="${HOME}/sgoinfre/opt/brave/brave-browser"
 ICON_PATH="${HOME}/sgoinfre/opt/brave/product_logo_256.png"
 COMMAND="brave"
 
-curl -L "https://github.com/brave/brave-browser/releases/download/v1.30.86/brave-browser-1.30.86-linux-amd64.zip" --output /tmp/brave.zip
+curl -L ${BRAVE_LINK} --output /tmp/brave.zip
 mkdir -p ${HOME}/sgoinfre/opt
 rm -rf ${HOME}/sgoinfre/opt/brave/
 unzip -d ${HOME}/sgoinfre/opt/brave /tmp/brave.zip

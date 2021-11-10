@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BRAVE_LINK="https://github.com/brave/brave-browser/releases/download/v1.31.87/brave-browser-1.31.87-linux-amd64.zip"
+BRAVE_LINK="https://github.com/brave/brave-browser/releases/download/v1.32.97/brave-browser-1.32.97-linux-amd64.zip"
 DESKTOP_FILE=${HOME}/.local/share/applications/brave.desktop
 EXEC_COMMAND="${HOME}/sgoinfre/opt/brave/brave-browser"
 ICON_PATH="${HOME}/sgoinfre/opt/brave/product_logo_256.png"

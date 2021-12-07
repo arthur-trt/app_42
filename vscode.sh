@@ -3,7 +3,7 @@
 #
 # You can chose the vscode build you want : stable // insider
 #
-BUILD=stable # Or insider
+BUILD=insider # Or insider
 
 
 DESKTOP_FILE=${HOME}/.local/share/applications/com.visualstudio.code.desktop
